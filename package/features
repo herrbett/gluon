@@ -27,4 +27,5 @@ packages 'status-page & (mesh-batman-adv-14 | mesh-batman-adv-15)' \
         'gluon-status-page-mesh-batman-adv'
 
 packages 'mesh-batman-adv-14 | mesh-batman-adv-15' \
-        'gluon-ebtables-limit-arp'
+	'gluon-ebtables-limit-arp' \
+	'gluon-radvd'
