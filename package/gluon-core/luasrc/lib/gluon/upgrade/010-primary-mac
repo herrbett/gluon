@@ -55,6 +55,8 @@ elseif platform.match('ath79', 'generic', {'ocedo,raccoon'}) then
 elseif platform.match('ipq40xx', 'generic', {'avm,fritzbox-4040',
                                              'openmesh,a42', 'openmesh,a62'}) then
   table.insert(try_files, 1, '/sys/class/net/eth0/address')
+elseif platform.match('ipq40xx', 'generic', {'linksys,ea6350v3'}) then
+  table.insert(try_files, 1, '/sys/class/net/eth1/address')
 elseif platform.match('ipq806x', 'generic', {'netgear,r7800'}) then
   table.insert(try_files, 1, '/sys/class/net/eth1/address')
 elseif platform.match('mpc85xx', 'p1020', {'aerohive,hiveap-330'}) then
