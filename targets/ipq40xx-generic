@@ -49,6 +49,13 @@ device('gl.inet-gl-b1300', 'glinet_gl-b1300', {
 	factory = false,
 })
 
+-- Linksys
+
+  device('linksys-ea8300', 'linksys_ea8300', {
+ 	extra_images = {
+ 		{'-squashfs-factory', '-factory', '.bin'},
+ 	},
+ })
 
 -- NETGEAR
 
